@@ -6,7 +6,7 @@ Welcome to our project repository! This is Group A035's work analyzing the facto
 
 ## 📂 Repository Structure
 
-- **Main Folder**: Contains our combined work, including analysis, visualizations, and the final report.
+- **Main Folder named A035**: Contains our combined work, including analysis, visualizations, and the final report.
 - **Individual Folders**: Each group member's individual contributions are stored here to avoid data conflicts.
 
 ---
@@ -28,6 +28,17 @@ Resale value often impacts car purchasing decisions. We chose this dataset becau
 
 
 ---
+
+## 👥 Group Members
+
+| Name                | Email Address           | GitHub Profile                        | Student ID |
+|---------------------|-------------------------|---------------------------------------|------------|
+| **Rutvik Kishorbhai Vadher**        | rv23aaw@herts.ac.uk     | [GitHub Link](https://github.com/rootveek) | 23034973   |
+| **Emma Harrison**        | eh23abv@herts.ac.uk     | [GitHub Link](https://github.com/Emma-Harrison1) | 23040079   |
+| **Muhammad Waleed Ashraf**        | ma23ape@herts.ac.uk     | [GitHub Link](https://github.com/MuhammadWaleedAshraf) | 23023507   |
+| **Marshal Ashokkumar Pachani**        | member4@example.com     | [GitHub Link](https://github.com/Marshal-patel) | 23030538   |
+| **saiyad alfaiz**        | as23aqv@herts.ac.uk     | [GitHub Link](https://github.com/) | waiting   |
+
 
 ## 🚀 How to Use This Repository
 
