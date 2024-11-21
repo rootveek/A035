@@ -16,6 +16,7 @@ Welcome to our project repository! This is Group A035's work analyzing the facto
 - **Dataset ID**: `DS261`
 - **Dataset Name**: [Car resale data - 2023](https://www.kaggle.com/datasets/rahulmenon1758/car-resale-prices)
 - **File Name**: `car_resale_prices.csv`
+- **URL**: 'https://www.kaggle.com/datasets/rahulmenon1758/car-resale-prices'(https://www.kaggle.com/datasets/rahulmenon1758/car-resale-prices)
 
 ### Why This Dataset?
 Resale value often impacts car purchasing decisions. We chose this dataset because it provides insights into how various factors, such as fuel type, influence the resale price of cars.
@@ -26,7 +27,6 @@ Resale value often impacts car purchasing decisions. We chose this dataset becau
 
 > **Is there a difference in the mean resale price of cars between different fuel types?**
 
-We aim to explore whether fuel type significantly impacts car resale prices using statistical and analytical methods.
 
 ---
 
@@ -34,4 +34,4 @@ We aim to explore whether fuel type significantly impacts car resale prices usin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repository-url.git
+   git clone [https://github.com/rootveek/A035.git](https://www.kaggle.com/datasets/rahulmenon1758/car-resale-prices)
