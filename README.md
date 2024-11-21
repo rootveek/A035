@@ -33,4 +33,4 @@ Resale value often impacts car purchasing decisions. We chose this dataset becau
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/rootveek/A035.git](https://www.kaggle.com/datasets/rahulmenon1758/car-resale-prices)
+   git clone https://github.com/rootveek/A035.git
