@@ -14,10 +14,9 @@ Welcome to our project repository! This is Group A035's work analyzing the facto
 ## 📊 Dataset Information
 
 - **Dataset ID**: `DS261`
-- **Dataset Name**: [Car resale data - 2023](https://www.kaggle.com/datasets/rahulmenon1758/car-resale-prices)
+- **Dataset Name**: [Car resale data - 2023]
 - **File Name**: `car_resale_prices.csv`
-- **URL**: 'https://www.kaggle.com/datasets/rahulmenon1758/car-resale-prices'(https://www.kaggle.com/datasets/rahulmenon1758/car-resale-prices)
-
+- **URL**: https://www.kaggle.com/datasets/rahulmenon1758/car-resale-prices
 ### Why This Dataset?
 Resale value often impacts car purchasing decisions. We chose this dataset because it provides insights into how various factors, such as fuel type, influence the resale price of cars.
 
