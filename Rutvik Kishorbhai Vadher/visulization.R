@@ -1,7 +1,5 @@
 library(dplyr)
 library(ggplot2)
-#testing
-#testing
 df <- read.csv("C:/Users/rajpu/Desktop/rutvik/A035/Rutvik Kishorbhai Vadher/car_resale_prices.csv")
 
 convert_resale_price <- function(price) {
