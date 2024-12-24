@@ -1,21 +1,12 @@
-# Car Resale Price Analysis
-# Author: Saiyad Mahamad Alfaiz Saiyad
-
 library(dplyr)
 library(ggplot2)
 
 MAX_PRICE_THRESHOLD <- 2500000
 VALID_FUEL_TYPES <- c("Petrol", "Diesel", "Electric", "CNG")
-
-
 convert_price <- function(price_str) {
   if(is.na(price_str)) return(NA)
-  
-
   clean_price <- gsub("\\s+", "", as.character(price_str))
   clean_price <- gsub(",", "", clean_price)
-  
-
   if(grepl("Crore", clean_price)) {
     return(as.numeric(sub("Crore", "", clean_price)) * 10000000)
   } else if(grepl("Lakh", clean_price)) {
@@ -24,11 +15,9 @@ convert_price <- function(price_str) {
     return(as.numeric(gsub("[₹]", "", clean_price)))
   }
 }
-
 process_car_data <- function(file_path) {
   tryCatch({
     df <- read.csv(file_path, stringsAsFactors = FALSE)
-    
     clean_df <- df %>%
       mutate(
         resale_price = sapply(resale_price, convert_price),
@@ -41,8 +30,6 @@ process_car_data <- function(file_path) {
         !is.na(fuel_type),
         !is.na(price_in_lakh)
       )
-    
-    # Basic visualizations
     price_hist <- ggplot(clean_df, aes(x = price_in_lakh)) +
       geom_histogram(bins = 20, fill = "blue", alpha = 0.7) +
       labs(
@@ -50,8 +37,6 @@ process_car_data <- function(file_path) {
         x = "Price (Lakh ₹)",
         y = "Frequency"
       )
-    
-    # Boxplot by fuel type
     price_by_fuel <- ggplot(clean_df, aes(x = fuel_type, y = price_in_lakh)) +
       geom_boxplot(aes(fill = fuel_type)) +
       labs(
@@ -59,14 +44,12 @@ process_car_data <- function(file_path) {
         x = "Fuel Type",
         y = "Price (Lakh ₹)"
       )
-    
     stat_test <- tryCatch({
       kruskal.test(price_in_lakh ~ fuel_type, data = clean_df)
     }, error = function(e) {
       warning("Statistical test failed")
       return(NULL)
     })
-    
     ggsave("price_histogram.png", price_hist)
     ggsave("price_by_fuel.png", price_by_fuel)
     list(
@@ -74,7 +57,6 @@ process_car_data <- function(file_path) {
       stats = stat_test,
       plots = list(price_hist, price_by_fuel)
     )
-    
   }, error = function(e) {
     print(paste("Error processing file:", e$message))
     return(NULL)
@@ -82,7 +64,6 @@ process_car_data <- function(file_path) {
 }
 main <- function() {
   result <- process_car_data("car_resale_prices.csv")
-  
   if(!is.null(result)) {
     print("Analysis completed")
     print(summary(result$data))
